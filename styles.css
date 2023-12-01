@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(75, 74, 74);
+}
+
+header { /* CABECERA */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Ordenar Objetos En Columna */
+    width: 100%;
+    height: auto;
+}
+
+#Banner-1 {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 5px;
+    width: 60%;
+}
+
+#Menu {
+    background-color: rgb(43, 43, 43);
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#Menu li {
+    display: inline-flex; /* Colocar La Lista En Horizontal */
+    margin-left: 40px;
+}
+
+#Menu a{
+    text-decoration: none; 
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+#Pagina-2 {
+    margin-right: 40px;
+    background-color: rgb(40, 114, 199);
+    border-radius: 5px;
+}
+
+.Item-1:hover{ /* Cambiar Color En Selección */
+    background-color: rgb(27, 186, 186); 
+    border-radius: 5px;
+}
+
+#Informacion { /* SECCION DE INFORMACION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#Separador-1 {
+    background-color: rgb(116, 248, 246);
+    border-radius: 6px;
+    border: 3px black solid;
+    text-align: center;
+    width: 95%;
+    padding: 20px;
+    margin: 8px;
+}
+
+#Titulo-1 {
+    font-size: 30px;
+}
+
+#Contenedor-1 {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 80%;
+    height: 60vh;
+    box-shadow: 3px 3px 4px 3px rgb(116, 248, 246); /* X - Y - Difuminacion - Expanda - Color */
+}
+
+#Texto-1 {
+    width: 60%;
+}
+
+#Texto-2 {
+    width: 60%;
+}
+
+#Vision{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+#Mision{ 
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.Descripciones {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Imagen Se Adapte Al Espacio */
+    margin-left: 15px;
+}
+
+.Titulo-2 {
+    margin-bottom: 15px;
+}
+
+.Parrafo-1 {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#Servicios { /* SECCION DE SERVICIOS */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#Separador-2 {
+    background-color: rgb(116, 182, 248);
+    border-radius: 6px;
+    border: 3px black solid;
+    text-align: center;
+    width: 95%;
+    padding: 20px;
+    margin: 8px;
+}
+
+#Contenedor-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 80%;
+    height: 60vh;
+    box-shadow: 3px 3px 4px 3px rgb(116, 182, 248);
+}
+
+.Tarjeta {
+    width: 20%;
+    margin: 20px;
+    border-radius: 6px;
+    background: rgb(231, 230, 230);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 2px black solid;
+}
+
+.Tarjeta:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%); /* Mover Tarjeta Cuando Esté Seleccionada Hacia Arriba*/
+}
+
+.Fotos {
+    width: 100%;
+    height: 210px;
+}
+
+.Box-1 {
+    padding: 15px;
+    text-align: center;
+}
+
+.Parrafo-2 {
+    line-height: 1.5; /* Linea De Cada Parrafo Tenga Espacio */
+    color: rgb(105, 102, 102);
+}
+
+.Titulo-3 {
+    font-weight: 400; /* Reduce la negrita de la letra */
+    margin-bottom: 15px;
+}
+
+.Boton-1 {
+    text-decoration: none;
+    display: inline-block; /* Boton No Sobresalte Párrafo */
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px black solid;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.Boton-1:hover {
+    background: black;
+    color: white;
+}
+
+#Clientes { /* SECCION DE CLIENTES */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#Separador-3 {
+    background-color: rgb(116, 248, 246);
+    border-radius: 6px;
+    border: 3px black solid;
+    text-align: center;
+    width: 95%;
+    padding: 20px;
+    margin: 8px;
+}
+
+#Contenedor-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 80%;
+    height: 40vh;
+    box-shadow: 3px 3px 4px 3px rgb(116, 248, 246);
+}
+
+#Caja-1 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.Imagen-1 {
+    width: 40vh;
+    border: 2px black solid;
+    box-shadow: 2px 2px 8px 4px rgb(116, 248, 246);
+    transition: all 200ms ease;
+}
+
+.Imagen-1:hover {
+    transform: translateY(-3%);
+}
+
+#Caja-2 {
+    background-color: rgb(23, 23, 23);
+    margin-top: 30px;
+    width: 100%;
+    height: 80vh;
+}
+
+#Footer-1 { /* SECCION DEL PIE DE PAGINA */
+    background-color: black;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+}
+
+#Redes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Logo {
+    text-decoration: none;
+    font-size: 28px;
+    margin: 0px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#Ubicacion-1 {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.Logo:hover {
+    color: red;
+}
+
+#Ubicacion-1:hover {
+    color: red;
+}
+
+.Parrafo-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px; /* Altura De Cada Linea De Parrafos */
+    width: 100%;
+    color: white;
+}
+
+.Texto-3 {
+    opacity: 0.8;
+}
+
+#Enlace-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+#Correo-1 {
+    color: rgb(0, 255, 247);
+    cursor: pointer;
+}
+
+#Correo-1:hover {
+    color: red;
+}
+
+#Copyright {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+    width: 80%;
+    color: white;
+    opacity: 0.5;
+    margin: 30px;
+}
+
+#Redes {
+    width: 100%;
+    height: auto;
+}
